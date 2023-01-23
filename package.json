@@ -1,0 +1,22 @@
+{
+  "name": "cdp-simpletestsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrogowski/CDP-SimpleTestSite.git"
+  },
+  "author": "odzio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrogowski/CDP-SimpleTestSite/issues"
+  },
+  "homepage": "https://github.com/wrogowski/CDP-SimpleTestSite#readme",
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  }
+}
