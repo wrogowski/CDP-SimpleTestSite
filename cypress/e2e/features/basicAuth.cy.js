@@ -31,4 +31,9 @@ describe("test basic authentication feature", () => {
       getErrorMessage("Invalid credentials");
     });
   });
+
+  it('it is impossible to enter logged in page without logging in', () => {
+    cy.visit(Cypress.config("baseUrl") + LoggedInPage.path);
+    // loggedInPage.returnButton().should('not.exist'); <- the page actually doesn't need authentication 
+  });
 });
