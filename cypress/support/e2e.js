@@ -15,6 +15,11 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import HomePage from '../e2e/pages/homePage'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+beforeEach('visit the Home Page', () => {
+  HomePage.visit();
+})
