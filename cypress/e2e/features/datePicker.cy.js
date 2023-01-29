@@ -1,10 +1,9 @@
-import HomePage from "../pages/homePage";
 import datePickerTab from "../pages/datePickerTab";
 const { provideDate, dateInputError } = datePickerTab;
 
 describe("test checking and unchecking the checkbox controls", () => {
   beforeEach("unroll the tab with the controls", () => {
-    HomePage.openElementsTab("Date picker");
+    cy.openElementsTab("Date picker");
   });
 
   it("allows to select a date from '2020", () => {

@@ -1,9 +1,8 @@
-import HomePage from "../pages/homePage";
 import checboxesTab from "../pages/checboxesTab";
 
 describe("test checking and unchecking the checkbox controls", () => {
   beforeEach("unroll the tab with the controls", () => {
-    HomePage.openElementsTab("Checkboxes");
+    cy.openElementsTab("Checkboxes");
   });
 
   it("correctly changes the current state of the checkbox", () => {
