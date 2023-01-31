@@ -3,11 +3,7 @@ import {
   getSelectedOption,
 } from "../pages/dropdownListTab";
 
-describe("test dropdown option select", () => {
-  beforeEach("unroll the tab with the controls", () => {
-    cy.openElementsTab("Dropdown list");
-  });
-
+describe("Dropdown list", () => {
   it("selects option1 by its text", () => {
     selectDropdownOption("Option 1");
     getSelectedOption().should("have.value", 1);

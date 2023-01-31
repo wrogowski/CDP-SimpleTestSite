@@ -1,11 +1,7 @@
 import InputsTab from "../pages/inputsTab";
 const { typeIntoField, checkInputVale } = InputsTab;
 
-describe("Check numeric input field", () => {
-  beforeEach("unroll the tab with the controls", () => {
-    cy.openElementsTab("Inputs");
-  });
-
+describe("Inputs", () => {
   it("positive, negative numbers and exponent notation are allowed in the field", () => {
     [123, 0, -321, "1e-10", "-5e20", -0, 5.789, -5.7987].forEach((number) => {
       typeIntoField(number);

@@ -14,11 +14,12 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-beforeEach('visit the Home Page', () => {
-  cy.visit('/');
-})
+beforeEach("visit the Home Page", () => {
+  cy.visit("/");
+  cy.unrollTestedControlsTab(Cypress.currentTest.titlePath[0]);
+});

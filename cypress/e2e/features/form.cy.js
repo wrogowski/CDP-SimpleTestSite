@@ -1,10 +1,6 @@
 import formTab from "../pages/formTab";
 
-describe("test form inputs", () => {
-  beforeEach("unroll the tab with the controls", () => {
-    cy.openElementsTab("Form");
-  });
-
+describe("Form", () => {
   [
     { firstName: "a", lastName: "1" },
     { firstName: " ", lastName: " " },

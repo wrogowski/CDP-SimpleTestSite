@@ -1,11 +1,7 @@
 import datePickerTab from "../pages/datePickerTab";
 const { provideDate, dateInputError } = datePickerTab;
 
-describe("test checking and unchecking the checkbox controls", () => {
-  beforeEach("unroll the tab with the controls", () => {
-    cy.openElementsTab("Date picker");
-  });
-
+describe("Date picker", () => {
   it("allows to select a date from '2020", () => {
     ["2020-01-01", "2020-12-31"].forEach((date) => {
       provideDate(date);

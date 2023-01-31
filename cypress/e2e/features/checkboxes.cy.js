@@ -1,10 +1,6 @@
 import checboxesTab from "../pages/checboxesTab";
 
-describe("test checking and unchecking the checkbox controls", () => {
-  beforeEach("unroll the tab with the controls", () => {
-    cy.openElementsTab("Checkboxes");
-  });
-
+describe("Checkboxes", () => {
   it("correctly changes the current state of the checkbox", () => {
     checboxesTab.checkboxesForm().within(() => {
       checboxesTab.checkbox().first().check().should("be.checked");

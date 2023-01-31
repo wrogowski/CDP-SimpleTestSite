@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add("openElementsTab", (tabTame) => {
+Cypress.Commands.add("unrollTestedControlsTab", (tabTame) => {
   cy.get("div[id$='-header']").contains(tabTame).click();
   cy.get("h2")
     .contains(`Test ${tabTame.toLowerCase()} below:`)

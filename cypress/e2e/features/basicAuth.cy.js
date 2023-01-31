@@ -2,11 +2,7 @@ import { loginWithCredentials, getErrorMessage } from "../pages/basicAuthTab";
 import loggedInPage from "../pages/loggedInPage";
 import LoggedInPage from "../pages/loggedInPage";
 
-describe("test basic authentication feature", () => {
-  beforeEach("unroll the tab with the controls", () => {
-    cy.openElementsTab("Basic auth");
-  });
-
+describe("Basic auth", () => {
   it("Login confirmation is disaplyed on a new page after providing correct credentials", () => {
     loginWithCredentials();
     cy.location("pathname").should("eq", LoggedInPage.path);
