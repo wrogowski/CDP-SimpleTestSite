@@ -20,12 +20,12 @@ describe("test form inputs", () => {
   });
 
   [
-    { it: "firstName", firstName: "", lastName: "1" },
-    { it: "lastName", firstName: "a", lastName: "" },
+    { input: "firstName", firstName: "", lastName: "1" },
+    { input: "lastName", firstName: "a", lastName: "" },
   ].forEach((run) => {
-    it(`Does not allow to submit empty ${run.it} field`, () => {
+    it(`Does not allow to submit empty ${run.input} field`, () => {
       formTab.submitFormData(run.firstName, run.lastName);
-      formTab.getInvalidInput(run.it).should('be.visible');
+      formTab.getInvalidInput(run.input).should('be.visible');
     });
   });
 });
