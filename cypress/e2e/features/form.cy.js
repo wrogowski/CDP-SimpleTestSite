@@ -25,7 +25,7 @@ describe("test form inputs", () => {
   ].forEach((run) => {
     it(`Does not allow to submit empty ${run.it} field`, () => {
       formTab.submitFormData(run.firstName, run.lastName);
-      formTab.invalidInput().should("exist");
+      formTab.getInvalidInput(run.it).should('be.visible');
     });
   });
 });
